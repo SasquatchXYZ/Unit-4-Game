@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Crystal Collector | Dalton Ricker</title>
+
+    <!--Link to Reset CSS-->
+    <link href="assets/css/reset.css" type="text/css" rel="stylesheet">
+    <!--Link to CSS Stylesheet-->
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <h1>Crystal Collector</h1>
+    </div>
+    <div id="instructions">
+        <p>You will be given a random number at the start of the game; this is your Target Number.</p>
+        <p>There are four crystals below; by clicking on a crystal you will add a specific amount of points to your Total Score, which starts at 0.</p>
+        <p>The objective of the game is to match your own Total Score to the random number; in doing so you win the game.  You lose the game if your Total Score exceeds the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it, and with each new game the value of the crystals changes.</p>
+        <p>It's like Blackjack... just with a randomly changing target number.</p>
+    </div>
+
+        <div class="column1">
+            <div class="targetlegend">
+                <p>Target Number:</p>
+            </div>
+            <div class="targetscoreboard">
+                <h1 id="targetscore">0</h1>
+            </div>
+        </div>
+        <div class="scoreboard">
+            <p id="result"></p>
+            <p id="wins">Wins: 0</p>
+            <p id="losses">Losses: 0</p>
+        </div>
+        <div class="column3">
+            <div class="playerlegend">
+                <p>Your Total Score is:</p>
+            </div>
+            <div class="playerscoreboard">
+                <h1 id="playerscore">0</h1>
+            </div>
+        </div>
+
+    <ul>
+        <l1><button id="crystal1"><img src="assets/images/ruby.png" height="100px" width="100px"> </button></l1>
+        <li><button id="crystal2"><img src="assets/images/sapphire.png" height="100px" width="100px"></button></li>
+        <li><button id="crystal3"><img src="assets/images/topaz.png" height="100px" width="100px"></button></li>
+        <li><button id="crystal4"><img src="assets/images/emerald.png" height="100px" width="100px"></button></li>
+    </ul>
+
+
+    <!--Link to jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Link to Javascript-->
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
