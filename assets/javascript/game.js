@@ -28,11 +28,16 @@ $(document).ready(function() {
         dispRefresh();
     }
 
+    function delayReset() {
+        window.setTimeout(gameReset, 2000);
+        window.setTimeout(dispRefresh, 2000)
+    }
+
     function gameReset() {
         targetScore = Math.floor(Math.random() * 102 + 19);
         console.log(targetScore);
         playerScore = 0;
-        result = "";
+        result = null;
         rubyvalue = Math.floor(Math.random() * 12 + 1);
         console.log(rubyvalue);
         sapphirevalue = Math.floor(Math.random() * 12 + 1);
@@ -53,17 +58,15 @@ $(document).ready(function() {
 
     function checkScore() {
         if (playerScore === targetScore) {
-/*            result = "You Win!";
-/!*            dispRefresh();*!/*/
+            result = "You Win!";
+            dispRefresh();
             wins++;
-            gameReset();
-            dispRefresh();
+            delayReset();
         } else if (playerScore > targetScore) {
-/*            result = "You Lost...";
-/!*            dispRefresh();*!/*/
-            losses++;
-            gameReset();
+            result = "You Lost...";
             dispRefresh();
+            losses++;
+            delayReset();
         } else {
 
         }
