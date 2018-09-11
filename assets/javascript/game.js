@@ -10,7 +10,7 @@ $(document).ready(function() {
     var topazvalue = "";
     var emeraldvalue = "";
 
-    // Functions
+// Functions============================================================================================================
     function gameStart() {
         targetScore = Math.floor(Math.random() * 102 + 19);
         console.log(targetScore);
@@ -30,7 +30,8 @@ $(document).ready(function() {
 
     function delayReset() {
         window.setTimeout(gameReset, 2000);
-        window.setTimeout(dispRefresh, 2000)
+        window.setTimeout(dispRefresh, 2000);
+        window.setTimeout(enableButton, 2000);
     }
 
     function gameReset() {
@@ -58,21 +59,30 @@ $(document).ready(function() {
 
     function checkScore() {
         if (playerScore === targetScore) {
+            disableButton();
             result = "You Win!";
             dispRefresh();
             wins++;
             delayReset();
         } else if (playerScore > targetScore) {
+            disableButton();
             result = "You Lost...";
             dispRefresh();
             losses++;
             delayReset();
         } else {
-
         }
     }
 
-    // Gameplay
+    function disableButton() {
+        $("#ruby, #sapphire, #topaz, #emerald").prop("disabled", true);
+    }
+
+    function enableButton() {
+        $("#ruby, #sapphire, #topaz, #emerald").prop("disabled", false);
+    }
+
+// Gameplay=============================================================================================================
     gameStart();
 
         $("#ruby").on("click", function() {
@@ -95,10 +105,4 @@ $(document).ready(function() {
             checkScore();
             dispRefresh();
         })
-
-
-
-
-
-
 });
