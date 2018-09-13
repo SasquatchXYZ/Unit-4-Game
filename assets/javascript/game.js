@@ -60,7 +60,7 @@ $(document).ready(function() {
     function checkScore() {
         if (playerScore === targetScore) {
             disableButton();
-            result = "You Win!";
+            result = "You Won!";
             dispRefresh();
             wins++;
             delayReset();

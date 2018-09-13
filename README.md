@@ -4,11 +4,11 @@ jQuery/Unit 4 Game Homework - Crystal Collector.  A fun and interactive game for
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This is a fun and interactive game that runs in your web browser.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+The only thing you need to enjoy the fun of the game is a web browser.
 
 ```
 Web Browser - Google Chrome Preferred
@@ -16,63 +16,16 @@ Web Browser - Google Chrome Preferred
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+No installation necessary.  Unless you don't have a web browser... in which case I question your ability to view this in the first place.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-## Versioning
+* [Meyerweb Reset CSS](https://meyerweb.com/eric/tools/css/reset/) - As the Reset CSS Stylesheet
+* [WebStorm](https://www.jetbrains.com/webstorm/) - IDE
 
 ## Authors
 
 * **Dalton Ricker** - *Primary Author* - [SasquatchXYZ](https://github.com/SasquatchXYZ)
 
-## License
-
 ## Acknowledgments
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Many thanks to my instructors & TAs, as well as the O'Reilly reference books.

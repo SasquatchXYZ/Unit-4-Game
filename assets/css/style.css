@@ -24,6 +24,8 @@ p{
 }
 
 #instructions {
+    border-radius: 0.25em;
+    border: 1px solid aquamarine;
     background-color: #0971b2;
     color: aquamarine;
     width: 750px;
@@ -34,10 +36,13 @@ p{
 .column1, .scoreboard, .column3 {
     float: left
 }
-#playerscore, #targetscore {
 
+p.target{
+    font-weight: 600;
 }
+
 .targetlegend {
+    border-radius: 0.5em;
     background-color: #FF0000;
     color: #222222;
     width: 300px;
@@ -47,6 +52,7 @@ p{
 }
 
 .targetscoreboard {
+    border-radius: 0.5em;
     background-color: #FF0000;
     color: #222222;
     width: 300px;
@@ -55,20 +61,37 @@ p{
     text-align: center;
     margin-bottom: 20px;
 }
+p#wins, p#losses {
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+p#result {
+    color: #FF5E00;
+    font-size: 1.5em;
+    font-weight: 600;
+}
 
 .scoreboard {
+    border-radius: 1.0em;
     background-color: darkcyan;
-    color: aqua;
+    color: #00FFFF;
     text-align: center;
+    vertical-align: middle;
     width: 250px;
     height: 150px;
+    line-height: 40px;
     margin-left: 55px;
     margin-right: 55px;
 }
+p.player {
+    font-weight: 600;
+}
 
 .playerlegend {
+    border-radius: 0.5em;
     background-color: #00ff48;
-    color: #00B233;
+    color: #004012;
     width: 300px;
     margin-bottom: 10px;
     text-align: center;
@@ -76,8 +99,9 @@ p{
 }
 
 .playerscoreboard {
+    border-radius: 0.5em;
     background-color: #00ff48;
-    color: #00B233;
+    color: #004012;
     width: 300px;
     height: 120px;
     line-height: 120px;
