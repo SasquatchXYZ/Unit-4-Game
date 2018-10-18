@@ -4,11 +4,13 @@ body {
     width: 960px;
     margin: 0 auto;
 }
+
 h1 {
     font-size: 2.5em;
     font-weight: 800;
 }
-p{
+
+p {
     font-size: 1em;
     font-weight: 300;
     padding: 5px 0;
@@ -33,11 +35,12 @@ p{
     margin: 20px auto;
     padding: 10px;
 }
+
 .column1, .scoreboard, .column3 {
     float: left
 }
 
-p.target{
+p.target {
     font-weight: 600;
 }
 
@@ -61,6 +64,7 @@ p.target{
     text-align: center;
     margin-bottom: 20px;
 }
+
 p#wins, p#losses {
     font-weight: 600;
     font-size: 1.25em;
@@ -84,6 +88,7 @@ p#result {
     margin-left: 55px;
     margin-right: 55px;
 }
+
 p.player {
     font-weight: 600;
 }
@@ -112,11 +117,13 @@ p.player {
 .boardrow {
     margin-bottom: 20px;
 }
+
 ul {
     margin: 10px auto;
     text-align: center;
     clear: left;
 }
+
 li {
     display: inline;
     padding: 5px;

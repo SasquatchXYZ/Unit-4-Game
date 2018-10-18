@@ -1,5 +1,5 @@
 // jQuery Ready Function waits for the document to complete loading before initiating Javascript
-$(document).ready(function() {
+$(document).ready(function () {
     var targetScore = "";
     var playerScore = "";
     var result = "";
@@ -85,24 +85,24 @@ $(document).ready(function() {
 // Gameplay=============================================================================================================
     gameStart();
 
-        $("#ruby").on("click", function() {
-            playerScore = playerScore + rubyvalue;
-            checkScore();
-            dispRefresh();
-        });
-        $("#sapphire").on("click", function() {
-            playerScore = playerScore + sapphirevalue;
-            checkScore();
-            dispRefresh();
-        });
-        $("#topaz").on("click", function() {
-            playerScore = playerScore + topazvalue;
-            checkScore();
-            dispRefresh();
-        });
-        $("#emerald").on("click", function() {
-            playerScore = playerScore + emeraldvalue;
-            checkScore();
-            dispRefresh();
-        })
+    $("#ruby").on("click", function () {
+        playerScore = playerScore + rubyvalue;
+        checkScore();
+        dispRefresh();
+    });
+    $("#sapphire").on("click", function () {
+        playerScore = playerScore + sapphirevalue;
+        checkScore();
+        dispRefresh();
+    });
+    $("#topaz").on("click", function () {
+        playerScore = playerScore + topazvalue;
+        checkScore();
+        dispRefresh();
+    });
+    $("#emerald").on("click", function () {
+        playerScore = playerScore + emeraldvalue;
+        checkScore();
+        dispRefresh();
+    })
 });
